@@ -28,6 +28,7 @@ namespace AppiumDesktopTests.Tests
         public void ShutDownApp()
         {
             this.driver.Quit();
+            appiumLocalService.Dispose();
         }
 
         [TestCase("1", "2", "3")]
